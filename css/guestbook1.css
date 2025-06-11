@@ -148,7 +148,7 @@ input::placeholder {
   font-family: "TTHakgyoansimMulgyeolB";
   font-size: 26.5px;
   margin-left: 20px;
-  margin-bottom: 3px;
+  margin-bottom: 0px;
 }
 
 .avatar {

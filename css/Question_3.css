@@ -31,7 +31,7 @@ button {
 }
 
 button:hover {
-    background-color: rgb(244, 246, 221);
+    background-color: rgb(249, 254, 199);
     transform: scale(1.025);
     transition: transform 0.3s ease, opacity 0.3s ease;
 }

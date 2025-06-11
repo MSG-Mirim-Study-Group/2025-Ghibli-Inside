@@ -37,22 +37,21 @@ button:hover {
     transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
-/* 토토로 말랑거리는 애니메이션 */
 @keyframes totoroBounce {
     0% {
-        transform: scaleY(1); /* 시작: 원래 위치, 원래 크기 */
+        transform: scaleY(1);
     }
     25% {
-        transform: scaleY(1.02); /* 위로 살짝 올라가며 세로로 살짝 늘어남 */
+        transform: scaleY(1.02);
     }
     50% {
-        transform: scaleY(0.98); /* 원래 위치로 돌아오며 세로로 살짝 눌림 */
+        transform: scaleY(0.98);
     }
     75% {
-        transform: scaleY(1.02); /* 아래로 살짝 내려가며 세로로 살짝 늘어남 */
+        transform: scaleY(1.02);
     }
     100% {
-        transform: scaleY(1); /* 끝: 원래 위치, 원래 크기 */
+        transform: scaleY(1);
     }
 }
 

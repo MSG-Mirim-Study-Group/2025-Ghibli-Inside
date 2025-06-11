@@ -13,6 +13,7 @@
 
 <body>
     <img src="img/witch.png" id="witch">
+    <img src="img/hand.png" id="hand">
     <div class="Question">
         <img src="img/Q_White.png" class="Q">
         <p>별빛을 안고 걷던 그때, <br>

@@ -1,14 +1,16 @@
 body {
     background-color: #770909;
+    overflow: hidden;
 }
 
-html, body {
+html,
+body {
     margin: 0;
     padding: 0;
     width: 100%;
     height: 100%;
     position: relative;
-  }
+}
 
 .Question {
     color: #F9F4EF;
@@ -25,10 +27,12 @@ button {
     margin-top: 1.5%;
     border-radius: 25px;
     font-size: 24px;
+    position: relative;
+    top: 30px;
 }
 
 button:hover {
-    background-color: rgb(233, 234, 212);
+    background-color: rgb(230, 230, 230);
     transform: scale(1.025);
     transition: transform 0.3s ease, opacity 0.3s ease;
 }
@@ -36,10 +40,40 @@ button:hover {
 #witch {
     position: absolute;
     bottom: 0;
-    left: 63vw;
-    top: 2.5vw;
+    left: 70vw;
+    bottom: 8vh;
     margin: 0;
     z-index: 1;
-    width: 37vw;  
-    pointer-events: none;  
+    width: 30vw;
+    pointer-events: none;
+}
+
+@keyframes handWaggle {
+    0% {
+        transform: rotateZ(0deg);
+    }
+    25% {
+        transform: rotateZ(2deg);
+    }
+    50% {
+        transform: rotateZ(0deg);
+    }
+    75% {
+        transform: rotateZ(-2deg);
+    }
+    100% {
+        transform: rotateZ(0deg);
+    }
+}
+
+#hand {
+    position: absolute;
+    left: 63vw;
+    margin: 0;
+    z-index: 1;
+    width: 25vw;
+    top: 61vh;
+    pointer-events: none;
+    animation: handWaggle 2s ease-in-out infinite;
+    transform-origin: 50% 100%;
 }

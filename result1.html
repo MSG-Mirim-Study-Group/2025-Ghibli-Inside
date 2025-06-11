@@ -86,16 +86,16 @@
             <span id="match-name">메이</span>
         </div>
         <div class="match-info">
-            <span id="match-info">금방 마음이 따뜻해지는 당신을 느끼며 마음이 따뜻해지는 사람이에요.</span>
+            <span id="info">금방 마음이 따뜻해지는 당신을 느끼며 마음이 따뜻해지는 사람이에요.</span>
         </div>
     </section>
 
     <section class="footer">
         <img src="/img/result-footer.png" alt="결과 푸터" class="result-footer no-drag" />
-        <a href="guestbook.html" tabindex="0" id="footer-info-link">
+        <a href="guestbook3.html" tabindex="0" id="footer-info-link">
             <span id="footer-info">방명록으로 가기</span>
         </a>
-        <a href="result.html" tabindex="0" class="result-arrow-link">
+        <a href="guestbook3.html" tabindex="0" class="result-arrow-link">
             <img src="/img/result-arrow.png" alt="결과 버튼" class="result-arrow no-drag" />
         </a>
     </section>
