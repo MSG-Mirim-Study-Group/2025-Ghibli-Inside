@@ -1,3 +1,4 @@
+
 body {
     background-color: #446430;
 }
@@ -66,4 +67,8 @@ button:hover {
 
     animation: totoroBounce 2s ease-in-out infinite;
     transform-origin: bottom center;
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 00dde0166b9baf3e49e82adb5811731004f8fb49

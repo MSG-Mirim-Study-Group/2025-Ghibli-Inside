@@ -18,10 +18,14 @@
         <p>식사를 마친 당신은 문득 열린 창밖으로 시선을 옮깁니다.<br>
             정원 너머, 거대한 나무가 흔들립니다. 마치 당신을 부르고 있는 듯합니다.<br>
             비밀의 정원과 거대한 나무. 당신은 무엇을 할까요?</p>
-            <form class="button" method="post" action="score.php">
-                <button onclick="location.href='Question_6.html'" name="types[]" value="chihiro,haku">나무를 향해 다가가며 조용히 관찰한다.</button><br>
-                <button onclick="location.href='Question_6.html'" name="types[]" value="totoro,may,howl">가지 위로 올라가 위에서 마을을 바라본다.</button><br>
-                <button onclick="location.href='Question_6.html'" name="types[]" value="sophie, sosuke">나무 아래에서 잠시 숨을 고른다.</button><br> <!-- 포뇨 X -->
+            <?php $nickName = $_GET['name']; ?>
+            <form method="post" action="score.php">
+                <input type="hidden" name="nickName" value="<?= htmlspecialchars($nickName) ?>">
+                <input type="hidden" name="questionNum" value="5">
+                
+                <button name="types" value="chihiro,haku">나무를 향해 다가가며 조용히 관찰한다.</button><br>
+                <button name="types" value="totoro,may,howl">가지 위로 올라가 위에서 마을을 바라본다.</button><br>
+                <button name="types" value="sophie, sosuke">나무 아래에서 잠시 숨을 고른다.</button><br> <!-- 포뇨 X -->
             </form>
     </div>
 </body>
