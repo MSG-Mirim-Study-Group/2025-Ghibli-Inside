@@ -18,13 +18,15 @@
         <p>마녀가 사라지고, 그 자리엔 빛으로 된 길이 나타납니다. <br>
             그 길의 끝에, 어딘가 낯익은 존재가 서 있습니다.<br>
             “이제 뒤돌아보지 말고, 걸어가세요.”</p>
-        <form class="button" method="post" action="score.php">
-            <button onclick="location.href='#'" name="types[]" value="haku,totoro, chihiro">그대로 앞으로 걷기
-                시작한다.</button><br>
-            <button onclick="location.href='#'" name="types[]" value="ponyo, sophie, sosuke">잠시 멈췄다가 고개를 끄덕이고
-                나아간다.</button><br>
-            <button onclick="location.href='#'" name="types[]" value="may, howl">호기심에 뒤를 돌아본 후 걸어 나간다.</button><br>
-        </form>
+            <?php $nickName = $_GET['name']; ?>
+            <form method="post" action="score.php">
+                <input type="hidden" name="nickName" value="<?= htmlspecialchars($nickName) ?>">
+                <input type="hidden" name="questionNum" value="12">
+
+                <button name="types" value="haku,totoro, chihiro">그대로 앞으로 걷기 시작한다.</button><br>
+                <button name="types" value="ponyo, sophie, sosuke">잠시 멈췄다가 고개를 끄덕이고 나아간다.</button><br>
+                <button name="types" value="may, howl">호기심에 뒤를 돌아본 후 걸어 나간다.</button><br>
+            </form>
     </div>
     <div class="stars">
         <script>
