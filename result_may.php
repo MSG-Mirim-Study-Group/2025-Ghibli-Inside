@@ -80,7 +80,7 @@
             <span id="main-title">”메이”와 잘 맞는 캐릭터</span>
         </div>
         <a href="result1.html" tabindex="0">
-            <img src="/img/to_totoro.png" alt="토토로아이콘" class="match-img no-drag">
+            <img src="img/to_totoro.png" alt="토토로아이콘" class="match-img no-drag">
         </a>
         <div class="match-name">
             <span id="match-name">토토로</span>
@@ -91,12 +91,12 @@
     </section>
 
     <section class="footer">
-        <img src="/img/result-footer.png" alt="결과 푸터" class="result-footer no-drag" />
-        <a href="guestbook3.html" tabindex="0" id="footer-info-link">
+        <img src="img/result-footer.png" alt="결과 푸터" class="result-footer no-drag" />
+        <a href="guestbook3.php" tabindex="0" id="footer-info-link">
             <span id="footer-info">방명록으로 가기</span>
         </a>
-        <a href="guestbook3.html" tabindex="0" class="result-arrow-link">
-            <img src="/img/result-arrow.png" alt="결과 버튼" class="result-arrow no-drag" />
+        <a href="guestbook3.php" tabindex="0" class="result-arrow-link">
+            <img src="img/result-arrow.png" alt="결과 버튼" class="result-arrow no-drag" />
         </a>
     </section>
 

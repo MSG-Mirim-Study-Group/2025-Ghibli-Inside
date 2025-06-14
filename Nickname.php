@@ -1,4 +1,8 @@
 <?php
+
+session_start();//세션시작
+
+
 $error = ""; // 오류 메시지
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
@@ -7,6 +11,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if (empty($nickName)) {
         $error = "닉네임을 입력해주세요.";
     } else {
+
+        $_SESSION['nickname'] = $nickName;
         // DB 연결
         $conn = mysqli_connect('localhost', 'root', '111111', 'msg_itshow');
 
