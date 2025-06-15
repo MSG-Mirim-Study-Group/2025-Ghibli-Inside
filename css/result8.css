@@ -140,6 +140,7 @@ body {
     margin-top: 150px;
     position: relative;
     z-index: 1;
+    vertical-align: bottom;
 }
 
 .result-arrow {
