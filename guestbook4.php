@@ -22,7 +22,7 @@ $character_type = $_GET['character'] ?? '하쿠';
             <div id="box">
                 <p id="title">방명록</p>
                 <img src="img/Line.png" id="Line" />
-                <p id="text">"센과 치히로의 행방불명" - <?= htmlspecialchars($character_type) ?> 유형</p>
+                <p id="text">"센과 치히로의 행방불명" 유형</p>
                 <button type="button" id="arrow">
                     <img src="img/guest_arrow.png" onclick="location.href='Main.html'" />
                 </button>
@@ -34,7 +34,7 @@ $character_type = $_GET['character'] ?? '하쿠';
         <div id="chat-container">
             <?php
             // DB 연결
-            $conn = new mysqli("localhost", "root", "111111", "guestbook"); 
+            $conn = new mysqli("localhost", "root", "111111", "guestbook", 3307); 
             if ($conn->connect_error) {
                 die("DB 연결 실패: " . $conn->connect_error);
             }
