@@ -4,7 +4,7 @@ $type = $_POST['types'];
 $questionNum = $_POST['questionNum'];
 
 $characters = explode(',', $type); 
-$conn = mysqli_connect('localhost','root','111111','msg_itshow');
+$conn = mysqli_connect('localhost','root','111111','msg_itshow', 3307);
 
 if (!$conn) {
     die("DB 연결 실패: " . mysqli_connect_error());

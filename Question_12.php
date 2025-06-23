@@ -1,5 +1,10 @@
 <!-- 질문 12 -->
 
+<?php
+session_start();
+$resultPage = $_SESSION['result_page'] ?? 'result_unknown.php';
+?>
+
 <!DOCTYPE html>
 <html lang="ko">
 
@@ -41,8 +46,34 @@
                 starsContainer.appendChild(star);
             }
         </script>
-
     </div>
+
+    <script>
+    async function loadAndReplace(file) {
+        const response = await fetch(file);
+        const html = await response.text();
+        document.open();
+        document.write(html);
+        document.close();
+    }
+
+    async function showSequence() {
+        await loadAndReplace('loading1.html');
+        await new Promise(resolve => setTimeout(resolve, 1000));
+
+        await loadAndReplace('loading2.html');
+        await new Promise(resolve => setTimeout(resolve, 1000));
+
+        await loadAndReplace('loading3.html');
+
+        await loadAndReplace('loading3.html');
+        await new Promise(resolve => setTimeout(resolve, 1000));
+
+        window.location.href = resultPage;
+    }
+
+    showSequence();
+</script>
 </body>
 
 </html>
